@@ -166,7 +166,7 @@ class _LoginPageState extends State<_LoginPage> {
     _password = _passwordController.text;
 
     // Check if email or password is not filled
-    if (_fullName.isEmpty || _email.isEmpty || _password.isEmpty) {
+    if (_email.isEmpty || _password.isEmpty) {
       landingAlertDialog.showErrorDialog(context, 'Please fill in all the required fields.');
       return;
     }
